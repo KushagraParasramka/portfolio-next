@@ -179,6 +179,53 @@ export const DATA = {
         image: "/uniclean.jpeg",
         video: "",
       },
+      {
+        title: "InsightR: RAG-Based Chatbot",
+        href: "",
+        dates: "July 2024 - August 2024",
+        active: true,
+        description:
+          "Developed an intelligent RAG-based chatbot using Node.js and React.js, delivering dynamic and context-aware responses, leveraging cutting-edge AI models for seamless document vectorization.",
+        technologies: [
+          "Langchain",
+          "Ollama",
+          "Node.js",
+          "React.js"
+        ],
+        links: [
+          {
+            type: "Source",
+            href: "",
+            icon: <Icons.github className="size-3" />,
+          }
+        ],
+        image: "/ragllm.png",
+        video: "",
+      },
+      {
+        title: "Automatic Image Captioning Using AI",
+        href: "",
+        dates: "August 2023 - September 2023",
+        active: true,
+        description:
+          "Built a deep learning pipeline combining DenseNet201 for image feature extraction and LSTM for generating natural language captions, effectively bridging vision and language models.",
+        technologies: [
+          "Python",
+          "TensorFlow",
+          "Keras",
+          "CNN",
+          "LSTM"
+        ],
+        links: [
+          {
+            type: "Source",
+            href: "",
+            icon: <Icons.github className="size-3" />,
+          }
+        ],
+        image: "/imagecap.png",
+        video: "",
+      },
   ],
   hackathons: [ ],
 } as const;
