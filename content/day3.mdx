@@ -1,0 +1,99 @@
+---
+title: "Learnings"
+publishedAt: "2024-10-13"
+summary: "Node js"
+---
+(day3)
+Hi,
+
+Today I learnt many core things in node js and basic networking and revised my knowledge.
+Learnings :
+* JS
+* Node Js
+* IP
+* Status code
+* express / http server
+* route
+* domain
+* middlewares (body-parser, cors, etc)
+* request types
+* API
+* Protocol
+
+## JS
+* ECMA script based language
+* ECMA defines the features that should be included in JS
+* interpreted language
+* run on browser engines i.e. V8, JavascriptCore, etc
+* single threaded
+
+## Node js
+* runtime for JS on local machine.
+* provides V8 engine out of broweser
+* modified for local machine
+* Includes extra features like file parsing, server modules.
+* runs the js on cli (no UI needed/ no extra files needed)
+
+## IP adddress
+* an address for a machine on the internet
+* since IPv4 address are less comapred to the devices on the internet.
+* Almost all public IPs are owned by ISPs or large organisations.
+* To optimise it ISP use dynamic IP for consumers.
+* to host a server one needs a static IP.
+* Your router assigns you local IPs and all your requests go through the router as a single public IP
+* many servers can run on a single IP. Therefore, a server may not directly be called by IP address alone.
+* a load balancer or a reverse proxy maps the domain/ request to the specific server. __(needs more research)__
+
+## Status codes
+* these are the codes that are returned by server as per the state of response.
+* Each status code signifies a state of response.
+* codes :
+    * 200 - 299 : successful
+    * 400 - 499 : error fetching the request/ client side error
+    * 500 : server side error
+* each value in the range signifies a different state in the defined category. __(needs more research)__
+
+## Server
+* it is a program runnning on a machine which can be used by any other machine to perform its task.
+* A program exposed on internet for people to use to complete a specific task.
+* server runs on a machine binded to a port.
+* it listens on request on that port and handles the requests through APIs.
+* An http server is a server that listens on http requests.
+
+## Routes
+* Routes are the sub paths in the domain name.
+* a route in defined by the developer to lead to another page or component within that web application.
+
+## Domain name
+* a domain name is a unique name provided on the internet bu DNP.
+* DNS maps your domain name to your Ip address.
+* It makes it easy for the user to remember the address of your application.
+* First a user makes a request to get the ip address of the app from dns, which provides the ip the user should request to (its automated, the user only needs to enter the domain name)
+* Mappings arer usually cached in the user's machine
+
+## API
+* Application Programming Interface
+* a route within a server
+* each route is mapped to a function
+* that function is called on request to that API
+* there are different types of APIs : REST API, GraphQL
+
+## Middleware
+* these are the functions that are executed before the specified functions for the API
+* these funtions are usually for verifing the authenticity of the request
+* when completed they pass the request to the next function
+
+## Request types
+* the structure of a request is generally the same
+* types are like a category for the api, where each category defines a specific role.
+* tpes of types :
+    * GET : when user wants to get data
+    * POST : when user wants to send data to server
+    * PUT : when user wants to update data
+    * PATCH : when user wants ...
+    * DELETE : when user wants to delete data
+    * TRACK
+    * etc
+
+## HTTP protocol
+* stateless protocol
